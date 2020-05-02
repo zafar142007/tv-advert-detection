@@ -1,0 +1,10 @@
+{
+	"serverUrl" : "http://localhost",
+	"serverPort": 5000,
+	"samplingRate": 44100,
+	"recordingLengthS": 5,
+	"tmpPath": "tmp/",
+	"datasetPath": "dataset/",
+	"modelPath": "model/",
+	"model": "model-2020-04-28-09_10_51-166346"
+}

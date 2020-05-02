@@ -1,0 +1,1 @@
+python src/adastra/consoleRunner.py $1

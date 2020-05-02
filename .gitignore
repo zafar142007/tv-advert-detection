@@ -1,6 +1,7 @@
-<<<<<<< HEAD
-venv
-=======
+dataset/ad
+dataset/non-ad
+tmp/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -130,4 +131,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
->>>>>>> 38e3a14dbcb6666f165af52082e00f65a1314c3a
