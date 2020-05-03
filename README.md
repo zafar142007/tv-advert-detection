@@ -77,7 +77,7 @@ To run in console mode, install all of the above dependencies (both server and c
 Dataset collection mode
 ------------
 
-To run in console mode, install all of the above dependencies (both server and client) and run the following from the root directory of this project from a conda shell.
+To run in this mode, install the client dependencies given above and run the following from the root directory of this project from a conda shell.
 
 ```
 ./scripts/collectDataset.sh <number of minutes to run the program or omit this parameter to run indefinitely>
