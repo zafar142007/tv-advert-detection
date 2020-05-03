@@ -50,10 +50,9 @@ conda install -c anaconda pyaudio
 Run the scripts from a conda shell from root directory 
 
 ```
-./server.sh
+./scripts/server.sh
 
-./serverClient.sh
-
+./scripts/serverClient.sh <number of minutes to run the program or omit this parameter to run indefinitely>
 ```
 
 This will 
@@ -62,6 +61,25 @@ This will
 
 2. start to record 5 second audios from the default audio device and then try to classify if it is an advertisement or not by sending it to the local server.
 
+The server and the client could be on different machines.
+
 The configurations are in the config.json file.
 
-The server and the client could be on different machines.
+Console mode
+------------
+
+To run in console mode, install all of the above dependencies (both server and client) and run the following from the root directory of this project from a conda shell.
+
+```
+./scripts/consoleRunner.sh <number of minutes to run the program or omit this parameter to run indefinitely>
+```
+
+Dataset collecition mode
+------------
+
+To run in console mode, install all of the above dependencies (both server and client) and run the following from the root directory of this project from a conda shell.
+
+```
+./scripts/collectDataset.sh <number of minutes to run the program or omit this parameter to run indefinitely>
+```
+
