@@ -3,6 +3,23 @@ Adastra
 
 This is a utility to detect TV advertisements by audio through a trained artificial neural network. The training dataset was collected from various Indian news channels comprising 5 second audios. The ultimate aim is to develop an Android app that could mute the idiot box when advertisements are playing and vice versa.
 
+Capabilities
+============
+The utility could run in three modes.
+
+1. Client-Server mode
+
+In this mode, a server is run which is able to classify incoming audio streams as TV ads or not. A client would record from the default audio device and send these audios to the server over HTTP to classify them as ads/non-ads.
+
+2. Console mode
+
+In this mode, the utility would run on a machine, recording audios from the default audio device, classify them, and print the results.
+
+3. Dataset collection mode
+
+In this mode, a recorder program would run, recording audios from the default audio device and store them in a designated folder for use as dataset. The labelling would be done manually later on this dataset.
+
+
 Setup
 =====
 
@@ -11,24 +28,33 @@ Install anaconda 3.7. Probably use a Docker image with Anaconda preinstalled.
 Then install the following libraries.
 
 Server:
+------
 
+```
 conda install -c conda-forge librosa
 
 conda install -c conda-forge keras
 
 conda install -c anaconda flask
+```
 
 Client:
+------
 
+```
 conda install -c anaconda urllib3
 
 conda install -c anaconda pyaudio
+```
 
 Run the scripts from a conda shell from root directory 
 
+```
 ./server.sh
 
 ./serverClient.sh
+
+```
 
 This will 
 
